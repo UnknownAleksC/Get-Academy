@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>This test</title>
+</head>
+
+<body>
+    <h2 id="x" onclick="doThis(this)">KLIKK HER</h2>
+    <h2 id="y" onclick="doThis(this)">NEI, KLIKK HER</h2>
+    <h2 id="z" onclick="doThis(this)">KLIKK MEG ISTEDENFOR</h2>
+
+    <!-- <input id="number" type="range" min="1" max="100" step="1" oninput="show()"></input> -->
+    <!-- <div id="info"></div> -->
+
+    <script>
+
+        function doThis(theThis) {
+            if (theThis.id === 'x') {
+                theThis.innerHTML = "test";
+                document.getElementById('y').innerHTML = "test2";
+                document.getElementById('z').innerHTML = "test3";
+            } else if (theThis.id === 'y') {
+                theThis.innerHTML = "test";
+                document.getElementById('x').innerHTML = "test1";
+                document.getElementById('z').innerHTML = "test3";
+            } else {
+                theThis.innerHTML = "test";
+                document.getElementById('x').innerHTML = "test1";
+                document.getElementById('y').innerHTML = "test2";
+            }
+
+            theThis.innerHTML = `test`;
+            console.log(theThis.innerHTML);
+            if (theThis.innerHTML===`test`) {
+                console.log("hei");
+                document.getElementById('x').innerHTML = "test1";
+                document.getElementById('y').innerHTML = "test2";
+                document.getElementById('z').innerHTML = "test3";
+            }
+        }
+
+        // Læring av slide og if
+        function show() {
+            var valueTxt = document.getElementById('number').value;
+            var value = parseInt(valueTxt);
+            let html = `<p>Tallet er ${value}</p>`;
+            if (value < 50 && value > 20) {
+                html += '<p>Tallet er mindre enn 50 men større enn 20</p>'
+            }
+            document.getElementById('info').innerHTML = html;
+        }
+    </script>
+</body>
+
+</html>

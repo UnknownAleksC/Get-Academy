@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body>
+
+    <p id="app"></p>
+
+    <script>
+        // Model
+
+        let infoDiv = '';
+        let txtName1 = '';
+        let txtName2 = '';
+        let txtName3 = '';
+
+        // View
+
+        function view() {
+            let html = /* HTML */ `<p>Ferdighet 9b - Valgsetninger - Sammenligne to tekster</p>
+            <div>${infoDiv}</div>
+            <p>Endre på tekstene! (Prøv også å fylle ut tall: 11, 101, 102)</p>
+            <input type="text" onchange="findFirst(this)" value='${txtName1}'/><br/> 
+            <input type="text" onchange="findSecond(this)" value='${txtName2}'/><br/>
+            <input type="text" onchange="findThird(this)" value='${txtName3}'/><br/>
+            `
+            document.getElementById("app").innerHTML = html;
+        }
+
+        // Controller
+
+        function findFirst(whatInput) {
+            txtName1 = whatInput.value;
+            txtMatchConfirmation();
+            view()
+        }
+
+        function findSecond(whatInput) {
+            txtName2 = whatInput.value;
+            txtMatchConfirmation();
+            view()
+        }
+
+        function findThird(whatInput) {
+            txtName3 = whatInput.value;
+            txtMatchConfirmation();
+            view()
+        }
+
+        txtMatchConfirmation()
+        function txtMatchConfirmation() {
+            infoDiv = '';
+            console.log(txtName1, '<--- dette er tekst 1');
+            console.log(txtName2, '<--- dette er tekst 2');
+            console.log(txtName3, '<--- dette er tekst 3');
+            if (txtName1 == txtName2) {
+                infoDiv += 'Tekst 1 og 2 er like<br/>';
+            }
+            if (txtName1 != txtName2) {
+                infoDiv += '<del>Tekst 1 og 2 er like</del><br/>';
+            }
+            if (txtName1 == txtName3) {
+                infoDiv += 'Tekst 1 og 3 er like<br/>';
+            }
+            if (txtName1 != txtName3) {
+                infoDiv += '<del>Tekst 1 og 3 er like</del><br/>';
+            }
+            if (txtName3 == txtName2) {
+                infoDiv += 'Tekst 2 og 3 er like<br/>';
+            }
+            if (txtName3 != txtName2) {
+                infoDiv += '<del>Tekst 2 og 3 er like</del><br/>';
+            }
+            infoDiv += 'Om vi sorterer de tre tekstene, er denne den første:<br/>';
+        if (txtName1 <= txtName2) {
+            if (txtName3 <= txtName1) {
+                infoDiv += txtName3;
+            } else infoDiv += txtName1;
+        } else {
+            if (txtName3 <= txtName2) {
+                infoDiv += txtName3;
+            } else {
+                infoDiv += txtName2;
+            }
+        }
+        }
+        view()
+    </script>
+</body>
+
+</html>

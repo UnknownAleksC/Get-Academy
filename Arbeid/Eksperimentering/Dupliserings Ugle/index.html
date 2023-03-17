@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <audio id="legoSong" src="lego.mp3" loop></audio>
+    <button onclick="playAudio()">MUSIC</button>
+    <div id="owlRiddle"></div>
+    <div onclick="owlPicture(this)">CLICK TO START</div>
+    <script>
+
+        function playAudio() {
+            document.getElementById('legoSong').play();
+        }
+
+        function owlPicture() {
+            let owlWidth = randomNumber(window.innerWidth);
+            let owlHeight = randomNumber(window.innerHeight);
+            let owlStartX = randomNumber(window.innerWidth);
+            let owlStartY = randomNumber(window.innerHeight);
+
+            let newImg = '<img style="' +
+                newStylePx('left', owlStartX) +
+                newStylePx('top', owlStartY) +
+                newStylePx('width', owlWidth) +
+                newStylePx('height', owlHeight) +
+                ' position: absolute;' +
+                '" src="pinkOwl.png" ' +
+                'onclick="playAudio()">' +
+                '</img>';
+            document.write(newImg);
+            setInterval(owlPicture, 1000)
+        }
+
+        function newStylePx(name, value) {
+            return newStyle(name, value + 'px');
+        }
+
+        function newStyle(name, value) {
+            return name + ':' + value + ';';
+        }
+
+
+        function randomNumber(value) {
+            return Math.floor(Math.random() * value);
+        }
+
+    </script>
+</body>
+
+</html>

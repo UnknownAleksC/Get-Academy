@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦉Team7oppgave🦉</title>
+    <!-- icon under er et lite icon som dukker opp på topppn av fanen i web browseren, stylesheet linken henter CSS fra et external stylesheet -->
+    <link rel="icon" href="images/faviconOwl.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <!-- Her skal bildene komme i tilfeldig rekkefølge for å bli trykket på -->
+        <marquee direction="right" behavior="alternate" scrollamount=25>
+            <h1 id="tittel">UGLE GÅTEN</h1>
+        </marquee>
+        <div class="gridContainer">
+            <img id="r1k1" src="images/pinkOwlPiece1.png" class="gridInside" onclick="imageDoClick(this, 1)"></img>
+            <img id="r1k2" src="images/pinkOwlPiece2.png" class="gridInside" onclick="imageDoClick(this, 2)"></img>
+            <img id="r1k3" src="images/pinkOwlPiece3.png" class="gridInside" onclick="imageDoClick(this, 3)"></img>
+
+            <img id="r2k1" src="images/pinkOwlPiece4.png" class="gridInside" onclick="imageDoClick(this, 4)"></img>
+            <img id="r2k2" src="images/pinkOwlPiece5.png" class="gridInside" onclick="imageDoClick(this, 5)"></img>
+            <img id="r2k3" src="images/pinkOwlPiece6.png" class="gridInside" onclick="imageDoClick(this, 6)"></img>
+
+            <img id="r3k1" src="images/pinkOwlPiece7.png" class="gridInside" onclick="imageDoClick(this, 7)"></img>
+            <img id="r3k2" src="images/pinkOwlPiece8.png" class="gridInside" onclick="imageDoClick(this, 8)"></img>
+            <img id="r3k3" src="images/pinkOwlPiece9.png" class="gridInside" onclick="imageDoClick(this, 9)"></img>
+        </div>
+        <!-- Her er selve 'inventorien' som bildene du trykker på skal dukke opp, dette skal skje i javascript -->
+
+        <div id="divToHide">
+            <div class="gridContainerBox2" id="inventoryUnsorted"></div>
+            <div id="inventory" class="gridContainer">
+                <img id="ugleIRamme" src="images/pinkOwl.png" alt="inventoryOwl">
+                <img id="ramme" src="images/frame.png" alt="inventoryFrame">
+            </div>
+        </div>
+        
+        <button onclick="hideElement()">HIDE/SHOW inventory</button>
+        <!-- Her er selve 'inventorien' som bildene du trykker på skal dukke opp, dette skal skje i javascript -->
+    </div>
+    <!-- Her henter vi 'script' koden fra indes.js -->
+    <script src="index.js"></script>
+</body>
+
+</html>

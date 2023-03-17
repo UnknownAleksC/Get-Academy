@@ -1,0 +1,110 @@
+/* * endrer alt på siden */
+
+* {
+    font-family: 'Itim', cursive;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/background.png');
+    background-position: 58%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+}
+
+/* HR er et linjeskifte, har stylet den til å se noe penere ut */
+hr {
+    margin: 50px auto;
+    border: 0;
+    width: 10%;
+    border-top: red 5px dotted;
+}
+
+.headline {
+    padding: 50px;
+}
+
+/* Selve tamagotchi figuren */
+
+.tamagotchiDiv {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tamagotchiBall {
+    position: absolute;
+    margin-bottom: 156px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    color: black;
+    background-image: url('images/Pokeball.png');
+    background-size: contain;
+}
+
+/* Når musa hovrer over pokeballen spinner den */
+
+.tamagotchiBall:hover {
+    -webkit-animation: rotate-btn 1s linear 3;
+}
+
+@keyframes rotate-btn {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.status-div {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.status-bar {
+    width: 500px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(250, 207, 214);
+    padding: 0 10px;
+    margin: 20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: inline-flex;
+    color: black;
+}
+
+.buttonTest {
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    vertical-align: middle;
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    cursor: pointer;
+}
+
+.littTilHøyre {
+    margin-left: 10px;
+}
+
+.resetButton {
+    font-size: 20px;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    color: white;
+    text-shadow: 1px 1px 2px red;
+    cursor: pointer;
+}

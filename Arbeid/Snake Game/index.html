@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        tr {
+            padding: 0px;
+        }
+
+        td {
+            border: black 1px solid;
+            width: 25px;
+            height: 25px;
+        }
+
+        td.snakeBody {
+            background: rgb(135, 255, 135);
+        }
+
+        td.snakeHead {
+            background: rgb(80, 255, 80);
+        }
+
+        td.food {
+            background: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body">
+    <table id="app"></table>
+    <div id="text"></div>
+    <script>
+        // MODEL
+        const tableRef = document.getElementById('app');
+        const textDiv = document.getElementById('text');
+        let intervalId = false;
+        let table = false;
+
+        let snakeGame
+        initModel();
+
+        // VIEW
+        // setInterval(updateSnake(keyPress), 1000)
+
+        function updateView(e) {
+            let direction = snakeGame.direction;
+            let head = snakeGame.snakeHead;
+            let food = snakeGame.food;
+            let body = snakeGame.body;
+
+            if (
+                head.y >= snakeGame.size ||
+                head.y < 0 ||
+                head.x >= snakeGame.size ||
+                head.x < 0
+            ) return gameOver();
+
+            let headLoc = tableRef.rows[head.y].cells[head.x];
+            let foodLoc = tableRef.rows[food.y].cells[food.x];
+            for (i = body.length - 1; i >= 0; i--) {
+                let bodyLoc = tableRef.rows[body[i].y].cells[body[i].x]
+                bodyLoc.classList.remove('snakeBody')
+                if (i === 0) { body[i].x === head.x && body[i].y === head.y }
+                else { body[i] = body[i - 1] }
+            }
+
+            headLoc.classList.remove('snakeHead')
+            foodLoc.classList.remove('food');
+
+            if (direction == undefined) console.log('There is no input');
+            direction == 'ArrowDown' ? ++head.y : direction;
+            direction == 'ArrowUp' ? --head.y : direction;
+            direction == 'ArrowRight' ? ++head.x : direction;
+            direction == 'ArrowLeft' ? --head.x : direction;
+
+            if (food.x == head.x && food.y == head.y) {
+                foodEaten(head);
+            }
+
+            for (i = body.length - 1; i >= 0; i--) {
+                let bodyLoc = tableRef.rows[body[i].y].cells[body[i].x]
+                console.log(body[i].y, body[i].x);
+                bodyLoc.classList.add('snakeBody')
+            }
+
+            headLoc = tableRef.rows[head.y].cells[head.x];
+            foodLoc = tableRef.rows[food.y].cells[food.x];
+
+            headLoc.classList.add('snakeHead');
+            foodLoc.classList.add('food');
+        }
+
+        generateTable();
+        function generateTable() {
+            // Lager tabellen
+            for (let rowIndex = 0; rowIndex < snakeGame.size; rowIndex++) {
+                let newRow = tableRef.insertRow();
+                for (let colIndex = 0; colIndex < snakeGame.size; colIndex++) {
+                    let newCell = newRow.insertCell();
+                }
+            }
+
+            // Gir start kordinater til slange hode
+            let snakeCords = snakeGame.snakeHead;
+            let startCellSnake = tableRef.rows[snakeCords.y].cells[snakeCords.x];
+            startCellSnake.classList.add('snakeHead');
+
+            // Gir start kordinater til den første frukten
+            let foodCords = snakeGame.food;
+            let startCellFood = tableRef.rows[foodCords.y].cells[foodCords.x];
+            startCellFood.classList.add('food');
+
+            intervalId = setInterval(updateView, 100)
+        }
+
+        // CONTROLLER
+        document.addEventListener("keydown", (e) => {
+            let validInputs = ['ArrowRight', 'ArrowLeft', 'ArrowUp', 'ArrowDown'];
+            if (validInputs.includes(e.key)) {
+                if (e.key == validInputs[0] && snakeGame.direction == validInputs[1] ||
+                    e.key == validInputs[1] && snakeGame.direction == validInputs[0] ||
+                    e.key == validInputs[2] && snakeGame.direction == validInputs[3] ||
+                    e.key == validInputs[3] && snakeGame.direction == validInputs[2]) return;
+                snakeGame.previousDirection = snakeGame.direction;
+                snakeGame.direction = e.key;
+            }
+        });
+
+        function initModel() {
+            snakeGame = { size: 30 };
+            snakeGame.snakeHead = randomLocation();
+            snakeGame.food = randomLocation();
+            snakeGame.direction = undefined;
+            snakeGame.previousDirection = undefined;
+            snakeGame.body = [];
+        }
+
+        function randomLocation() {
+            return {
+                x: Math.floor(Math.random() * snakeGame.size),
+                y: Math.floor(Math.random() * snakeGame.size)
+            }
+        }
+
+        function gameOver() {
+            clearInterval(intervalId);
+            textDiv.innerHTML = `Game Over`;
+        }
+
+        function foodEaten(head) {
+            snakeGame.body.push({ y: head.y, x: head.x })
+            snakeGame.food = randomLocation();
+        }
+
+    </script>
+    </body>
+
+</html>

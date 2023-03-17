@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funksjon med Parametre</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainDiv">TRYKK EN AV KNAPPENE!</div>
+    <button onclick="blueBox('blue','geit',10,250,100,'center')">Blå</button>
+    <button onclick="blueBox('red','gris',20,400,50,'')">Rød</button>
+
+    <script>
+
+        function blueBox(color, text, width, height, fontSize, textAlign) {
+            var outputDiv = document.getElementById('mainDiv');
+            outputDiv.style.background=color;
+            outputDiv.innerHTML =/*HTML*/`
+            <div style="width:${width}%; height:${height}px;font-size:${fontSize}px;text-align:${textAlign}">${text}</div>
+            `;
+        }
+
+        function backgroundBox(color, width, height) {
+            document.getElementById('mainDiv').innerHTML =/*HTML*/`
+            <div style="background-color:${color}; width:${width}%; height:${height}px;"></div>
+            `;
+        }
+
+    </script>
+
+
+</body>
+
+</html>

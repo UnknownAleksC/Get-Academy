@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="content"></div>
+
+    <script>
+        // MODEL
+        let num1 = 0; // <-- Blir brukt som nummer 1
+        let num2 = 1; // <-- Blir brukt som nummer 2
+        let text = '<ul>'; // <-- Teksten er startet som en liste og vil oppdatere og lukke seg selv når numberGenerator er ferdig
+
+        // VIEW
+
+        // Lager og oppdaterer htmlen
+        viewUpdate();
+        function viewUpdate() {
+            document.getElementById('content').innerHTML = /*HTML*/ `
+            <button onclick="numberGenerator()">GENERER NUMMERE TIL DE BEGGE ER DET SAMME</button>
+            ${text} 
+            `;
+        }
+
+        // CONTROLLER
+
+        // Lager nummer til num1 og num2 er det samme
+        function numberGenerator() {
+            console.log(num1, num2);
+            text = '<ul>';
+            num1 = 0;
+            num2 = 1;
+            while (num1 !== num2) {
+                num1 = Math.round(Math.random() * 10);
+                num2 = Math.round(Math.random() * 10);
+                text = text + `<li>${num1} & ${num2}</li></br>`
+            }
+            text = text + '</ul>' +
+                '</br> <b> EQUAL NUMBERS FOUND! </b>';
+            viewUpdate();
+        }
+
+    </script>
+
+</body>
+
+</html>
