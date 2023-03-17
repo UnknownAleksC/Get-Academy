@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div onclick="sendOutput(this)">A</div>
+    <div onclick="sendOutput(this)">B</div>
+    <div id="output"></div>
+
+    <script>
+        let counter = 0;
+
+        function sendOutput(checkThis) {
+            if (checkThis.innerHTML === 'A') {
+                counter++
+            }
+            document.getElementById('output').innerHTML = checkThis.innerHTML + counter;
+        }
+    </script>
+</body>
+
+</html>

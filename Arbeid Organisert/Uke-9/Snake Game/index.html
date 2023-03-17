@@ -52,8 +52,6 @@
             let head = snakeGame.snakeHead;
             let food = snakeGame.food;
             let body = snakeGame.body;
-            let headLoc = tableRef.rows[head.y].cells[head.x];
-            let foodLoc = tableRef.rows[food.y].cells[food.x];
 
             if (
                 head.y >= snakeGame.size ||
@@ -62,17 +60,16 @@
                 head.x < 0
             ) return gameOver();
 
-            for (i = (body.length - 1); i >= 0; i--) {
-                let bodyLoc = tableRef.rows[body[i].y].cells[body[i].x];
-                bodyLoc.classList.remove('snakeBody');
-                if (i == 0) {
-                    body[i].x = head.x;
-                    body[i].y = head.y;
-                }
-                else if (i > 0) { body[i] = body[(i - 1)]; } // Makes .y and .x invalid
+            let headLoc = tableRef.rows[head.y].cells[head.x];
+            let foodLoc = tableRef.rows[food.y].cells[food.x];
+            for (i = body.length - 1; i >= 0; i--) {
+                let bodyLoc = tableRef.rows[body[i].y].cells[body[i].x]
+                bodyLoc.classList.remove('snakeBody')
+                if (i === 0) { body[i].x === head.x && body[i].y === head.y }
+                else { body[i] = body[i - 1] }
             }
 
-            headLoc.classList.remove('snakeHead');
+            headLoc.classList.remove('snakeHead')
             foodLoc.classList.remove('food');
 
             if (direction == undefined) console.log('There is no input');
@@ -82,14 +79,10 @@
             direction == 'ArrowLeft' ? --head.x : direction;
 
             if (food.x == head.x && food.y == head.y) {
-                let bodyLength = body.length;
-                if (bodyLength == 0) { body.push({ y: head.y, x: head.x }) }
-                else { body.push({ y: body[bodyLength - 1].y, x: body[bodyLength - 1].x }) }
-                food[0] = randomLocation();
+                foodEaten(head);
             }
 
-
-            for (i = 0; i < body.length; i++) {
+            for (i = body.length - 1; i >= 0; i--) {
                 let bodyLoc = tableRef.rows[body[i].y].cells[body[i].x]
                 console.log(body[i].y, body[i].x);
                 bodyLoc.classList.add('snakeBody')
@@ -157,6 +150,11 @@
         function gameOver() {
             clearInterval(intervalId);
             textDiv.innerHTML = `Game Over`;
+        }
+
+        function foodEaten(head) {
+            snakeGame.body.push({ y: head.y, x: head.x })
+            snakeGame.food = randomLocation();
         }
 
     </script>

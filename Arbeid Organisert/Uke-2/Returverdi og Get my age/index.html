@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mainDiv"></div>
+    <button onclick="alterAll('green', 'blue', 10, 'A GOAT CANT TALK')">TEST</button>
+    <button onclick="alterAll('blue', 'red', 20, 'A BOAT CANT DIVE')">TEST2</button>
+    <button onclick="alterAll('red', 'green', 30, 'A SNAIL CANT RUN')">TEST3</button>
+    </div>
+    <script>
+        function alterAll(bgColor, color, fontSize, text) {
+            document.getElementById('mainDiv').innerHTML = `
+               <div ${createStyle(bgColor, color, fontSize)}>${text}</div>
+            `;
+
+            function createStyle(bgColor, color, fontSize) {
+                return `style="${createBgColor(bgColor)} ${createColor(color)} ${createFontSize(fontSize)}"`;
+            }
+        }
+
+        function createBgColor(bgColor) {
+            return `background-color:${bgColor};`;
+        }
+
+        function createColor(color) {
+            return `color:${color};`;
+        }
+
+        function createFontSize(fontSize) {
+            return `font-size:${fontSize}px;`;
+        }
+    </script>
+</body>
+
+</html>

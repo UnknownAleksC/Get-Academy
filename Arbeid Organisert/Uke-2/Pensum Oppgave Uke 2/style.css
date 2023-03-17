@@ -1,0 +1,25 @@
+.picGroup {
+    display: row;
+    text-align: center;
+    margin-top: 10%;
+    height: 450px;
+    width: 488px;
+    margin-left: 40%;
+}
+
+.picSelect {
+    border: 5px solid red;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(255, 105, 105);
+}
+
+button {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 49%;
+}
+
+#showName {
+    height:auto;
+}

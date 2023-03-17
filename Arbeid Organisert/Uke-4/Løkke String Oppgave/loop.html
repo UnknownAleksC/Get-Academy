@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="content"></div>
+
+    <script>
+        // MODEL
+        let vocalText = '';
+        let vocalCounter = 0;
+
+        // VIEW
+        viewUpdate()
+        function viewUpdate() {
+            document.getElementById('content').innerHTML = /*HTML*/`
+                ${vocalText}
+                <input type="text" onchange="createText(this)" value=''/>
+                <div> Skriv inn teksten og få den tilbake baklengs!</div>
+            `;
+        }
+        // CONTROLLER
+        function createText(checkThis) {
+            let inputString = checkThis.value;
+            let text = '';
+            vocalCounter = 0;
+            for (let index = inputString.length; index >= 0; index--) {
+                text = text + inputString.charAt(index);
+                vocalCounter =
+                    (inputString.charAt(index) === 'a' ||
+                        inputString.charAt(index) === 'A' ||
+                        inputString.charAt(index) === 'e' ||
+                        inputString.charAt(index) === 'E' ||
+                        inputString.charAt(index) === 'i' ||
+                        inputString.charAt(index) === 'I' ||
+                        inputString.charAt(index) === 'o' ||
+                        inputString.charAt(index) === 'O' ||
+                        inputString.charAt(index) === 'u' ||
+                        inputString.charAt(index) === 'U' ||
+                        inputString.charAt(index) === 'y' ||
+                        inputString.charAt(index) === 'Y' ||
+                        inputString.charAt(index) === 'æ' ||
+                        inputString.charAt(index) === 'Æ' ||
+                        inputString.charAt(index) === 'ø' ||
+                        inputString.charAt(index) === 'Ø' ||
+                        inputString.charAt(index) === 'å' ||
+                        inputString.charAt(index) === 'Å') ?
+                        vocalCounter += 1 : vocalCounter;
+            }
+            vocalText = `${text}` +
+                ` <br/> <div>Antall vokaler: ${vocalCounter}</div>`;
+            viewUpdate();
+        }
+
+    </script>
+
+</body>
+
+</html>

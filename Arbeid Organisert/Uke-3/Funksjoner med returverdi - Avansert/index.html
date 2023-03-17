@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Ferdighet 12 - Funksjoner med returverdi</p>
+    <script>
+        tilfeldigFirkant();
+
+        function tilfeldigFirkant() {
+            var endX = tilfeldigTall(window.innerWidth * 0.2, window.innerWidth);
+            var endY = tilfeldigTall(window.innerHeight * 0.2, window.innerHeight);
+
+            var startX = tilfeldigTall(1, endX * 0.8);
+            var startY = tilfeldigTall(1, endY * 0.8);
+            var bredde = endX - startX;
+            var høyde = endY - startY;
+            var farge = tilfeldigFarge();
+            var divHtml = '<div style="' +
+                delAvStylePx('left', startX) +
+                delAvStylePx('top', startY) +
+                delAvStylePx('width', bredde) +
+                delAvStylePx('height', høyde) +
+                delAvStyle('background-color', farge) +
+                '">' +
+                tilfeldigOrd() +//putter ordet inn i htmlen
+                '</div>';
+            document.write(divHtml);
+            tilfeldigFirkant();
+        }
+
+        function delAvStylePx(navn, verdi) {
+            return delAvStyle(navn, verdi + 'px');
+        }
+
+        function delAvStyle(navn, verdi) {
+            return navn + ':' + verdi + ';';
+        }
+
+        function tilfeldigFarge() {
+            return '#' +
+                tilfeldigTallEllerBokstavABCDEF() +
+                tilfeldigTallEllerBokstavABCDEF() +
+                tilfeldigTallEllerBokstavABCDEF() +
+                tilfeldigTallEllerBokstavABCDEF() +
+                tilfeldigTallEllerBokstavABCDEF() +
+                tilfeldigTallEllerBokstavABCDEF();
+        }
+
+        // Tar funksjonen som lagde en bokstav og lager et ord med dem
+        function tilfeldigOrd() {
+            return tilfeldigBokstav() +
+                tilfeldigBokstav() +
+                tilfeldigBokstav() +
+                tilfeldigBokstav() +
+                tilfeldigBokstav();
+        }
+
+        function tilfeldigTallEllerBokstavABCDEF() {
+            var tall = tilfeldigTall(0, 15);
+            if (tall < 10) return tall;
+            const charCodeA = 'a'.charCodeAt(0);
+            return String.fromCharCode(tall - 10 + charCodeA);
+        }
+
+        // Laget en funksjon som gir en bokstav
+        function tilfeldigBokstav() {
+            var tall = Math.round(Math.random() * 28);
+            if (tall == 0) return bokstav = 'a';
+            else if (tall == 1) return bokstav = 'b';
+            else if (tall == 2) return bokstav = 'c';
+            else if (tall == 3) return bokstav = 'd';
+            else if (tall == 4) return bokstav = 'e';
+            else if (tall == 5) return bokstav = 'f';
+            else if (tall == 6) return bokstav = 'g';
+            else if (tall == 7) return bokstav = 'h';
+            else if (tall == 8) return bokstav = 'i';
+            else if (tall == 9) return bokstav = 'j';
+            else if (tall == 10) return bokstav = 'k';
+            else if (tall == 11) return bokstav = 'l';
+            else if (tall == 12) return bokstav = 'm';
+            else if (tall == 13) return bokstav = 'n';
+            else if (tall == 14) return bokstav = 'o';
+            else if (tall == 15) return bokstav = 'p';
+            else if (tall == 16) return bokstav = 'q';
+            else if (tall == 17) return bokstav = 'r';
+            else if (tall == 18) return bokstav = 's';
+            else if (tall == 19) return bokstav = 't';
+            else if (tall == 20) return bokstav = 'u';
+            else if (tall == 21) return bokstav = 'v';
+            else if (tall == 22) return bokstav = 'w';
+            else if (tall == 23) return bokstav = 'x';
+            else if (tall == 24) return bokstav = 'y';
+            else if (tall == 25) return bokstav = 'z';
+            else if (tall == 26) return bokstav = 'æ';
+            else if (tall == 27) return bokstav = 'ø';
+            else if (tall == 28) return bokstav = 'å';
+            const charCodeA = `${bokstav}`.charCodeAt(0);
+            return String.fromCharCode(charCodeA);
+        }
+
+        function tilfeldigTall(minimum, maksimum) {
+            return minimum + Math.floor(Math.random() * (maksimum - minimum + 1));
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 10px;
+            padding: 10px;
+            border: 2px double coral;
+            background-color: rgb(255, 189, 82);
+            border-radius: 10px;
+            float: left;
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="app"></p>
+</body>
+<script>
+    // MODEL
+    let word1 = '___';
+    let word2 = '___';
+    let word3 = '___';
+    let word4 = '___';
+    let word5 = '___';
+
+
+    // VIEW
+    updateView()
+    function updateView() {
+        document.getElementById('app').innerHTML = /*HTML*/`
+        <div>
+        <p>ADJEKTIV HISTORIE:<br />Once upon a time, there was a ${word1} king that had a ${word2} son. One day the
+            son found a ${word3} rock that had a ${word4} face. The ${word1} king was not happy with this and
+            threw the ${word3} rock into the ${word5} river.</p>
+        </div>
+        <div>
+            Ord 1: <input type="text" size="16" maxlength="16" onchange="updateTextValue1(this)" value=''/><br />
+            Ord 2: <input type="text" size="16" maxlength="16" onchange="updateTextValue2(this)" value=''/><br />
+            Ord 3: <input type="text" size="16" maxlength="16" onchange="updateTextValue3(this)" value=''/><br />
+            Ord 4: <input type="text" size="16" maxlength="16" onchange="updateTextValue4(this)" value=''/><br />
+            Ord 5: <input type="text" size="16" maxlength="16" onchange="updateTextValue5(this)" value=''/><br />
+            Press ENTER for å oppdatere
+        </div>
+    `;
+    }
+
+    // CONTROLLER
+    function updateTextValue1(checkThis) {
+        word1 = checkThis.value;
+        updateView();
+    }
+    function updateTextValue2(checkThis) {
+        word2 = checkThis.value;
+        updateView();
+    }
+    function updateTextValue3(checkThis) {
+        word3 = checkThis.value;
+        updateView();
+    }
+    function updateTextValue4(checkThis) {
+        word4 = checkThis.value;
+        updateView();
+    }
+    function updateTextValue5(checkThis) {
+        word5 = checkThis.value;
+        updateView();
+    }
+
+</script>
+
+</html>

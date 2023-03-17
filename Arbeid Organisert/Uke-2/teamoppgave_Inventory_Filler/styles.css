@@ -1,0 +1,71 @@
+/* Bilde boksen - usortert */
+.gridContainer {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 150px 150px 150px;
+    margin-left: 40%;
+    flex-shrink: 0;
+    width: auto;
+    height: auto;
+    white-space: 0;
+}
+
+.gridInside {
+    border: double blue;
+    background-color: lightskyblue;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
+/* Marquees teksten */
+#tittel {
+    font-size: 50px;
+    color: #398fe5;
+    text-decoration-line: underline;
+}
+
+/* Bilde boksen 2 - sortering */
+#inventory {
+    margin-left: 39.55%;
+    position: relative;
+    top: 25px;
+    left: 0;
+}
+
+.gridContainerBox2 {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 150px 150px 150px;
+    margin-left: 40%;
+    flex-shrink: 0;
+    margin-top:20px;
+    width: auto;
+    height: 0px;
+}
+
+.gridInsideBox2 {
+    border: double blue;
+    background-color: lightskyblue;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
+/* Bilde boksen 2 - Vinner bilde */
+#ugleIRamme {
+    height: 460px;
+    width: 460px;
+    margin-left:15px;
+    margin-top:-30px;
+    position: absolute;
+    display: none;
+}
+
+#ramme {
+    margin-left: -15px;
+    margin-top:-55px;
+    position: relative;
+    height: 500px;
+    width: 500px;
+}

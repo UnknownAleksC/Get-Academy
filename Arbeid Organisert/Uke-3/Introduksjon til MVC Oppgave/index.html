@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div {
+            font-size: 300%;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        // model
+        var points = 0;
+        var pointsPerClick = 1;
+        var smileyIndex = 0;
+        var hasCheated = false;
+
+        // controller
+        function doClick() {
+            points += pointsPerClick;
+            smileyIndex = 1 - smileyIndex;
+            updateView();
+        }
+
+        function buyUpgrade() {
+            if (points < 10) return;
+            points -= 10;
+            pointsPerClick++;
+            updateView();
+        }
+
+        function buyDowngrade() {
+            points -= 10;
+            pointsPerClick--;
+            updateView();
+        }
+
+        function cheat() {
+            points += points * 10;
+            pointsPerClick += pointsPerClick * 10;
+            hasCheated = true;
+            updateView();
+        }
+
+        function cheatMessage(cheated) {
+            cheated.value = `you cheated`
+        }
+
+        // view
+        updateView();
+        function updateView(cheated) {
+            if (hasCheated == true) {
+                var smiley = '😠';
+                document.getElementById('app').innerHTML = `
+                <div id="image" onclick="doClick()">${smiley}</div>
+                <div id="pointsInfo">${points}</div>
+                <button onclick="buyDowngrade()">DU JUKSET!!!</button>
+                <button>DET FINNES INGEN ANGRE KNAPP</button>
+            `;
+            }
+
+            else {
+                var smiley = smileyIndex == 0 ? '😀' : '😁';
+                document.getElementById('app').innerHTML = `
+                <div id="image" onclick="doClick()">${smiley}</div>
+                <div id="pointsInfo">${points}</div>
+                <button onclick="buyUpgrade()">Kjøp oppgradering (10 poeng)</button>
+                <button onclick="cheat()">Jukseknapp >:)</button>
+            `;
+            }
+        }
+    </script>
+</body>
+
+</html>
