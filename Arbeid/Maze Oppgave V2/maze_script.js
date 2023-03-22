@@ -49,6 +49,7 @@ updateView();
 function updateView() {
     const mainApp = document.getElementById('app');
     // Under blir tablet laget ved hjelp av map og anonyme funksjoner (også kalt lambda funksjon). 
+    // Dette tar for seg informasjonen allerede gitt i arrayet
     mainApp.innerHTML = `
     <table>
         ${mazeModel.rows.map((row, rowIndex) => `

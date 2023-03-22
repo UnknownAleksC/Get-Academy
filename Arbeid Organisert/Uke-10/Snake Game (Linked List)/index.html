@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
     <style>
-        tr {
-            padding: 0px;
+        table {
+            border: linear-gradient(#9abdd5, #6e76cc) solid 1px;
+            background: whitesmoke;
+            margin: auto;
         }
 
         td {
-            border: black 1px solid;
+            border: black 0px solid;
+            border-collapse: collapse;
             width: 25px;
             height: 25px;
         }
@@ -28,14 +31,10 @@
         td.food {
             background: rgb(255, 0, 0);
         }
-
-        td.eaten {
-            background: white;
-        }
     </style>
 </head>
 
-<body">
+<body onkeydown="return controlSnake(event)">
     <table id="app"></table>
     <div id="text"></div>
     <script>
@@ -90,12 +89,8 @@
                 updateFood(foodLoc, 2);
             }
 
-            // Updates snake position
-            if (direction == undefined) console.log('There is no input');
-            direction == 'ArrowDown' ? ++head.y : direction;
-            direction == 'ArrowUp' ? --head.y : direction;
-            direction == 'ArrowRight' ? ++head.x : direction;
-            direction == 'ArrowLeft' ? --head.x : direction;
+            // Updates position
+            move();
 
             // Puts down new body
             for (i = 0; i < body.length; i++) {
@@ -147,27 +142,15 @@
         }
 
         // CONTROLLER
-        // Checks what key is being pressed and updates it if conditions are met
-        document.addEventListener("keydown", (e) => {
-            let validInputs = ['ArrowRight', 'ArrowLeft', 'ArrowUp', 'ArrowDown'];
-            if (validInputs.includes(e.key)) {
-                if (e.key == validInputs[0] && snakeGame.direction == validInputs[1] ||
-                    e.key == validInputs[1] && snakeGame.direction == validInputs[0] ||
-                    e.key == validInputs[2] && snakeGame.direction == validInputs[3] ||
-                    e.key == validInputs[3] && snakeGame.direction == validInputs[2]) return;
-                snakeGame.previousDirection = snakeGame.direction;
-                snakeGame.direction = e.key;
-            }
-        });
-
         // Gives snakes the objects needed for the model
         function initModel() {
             snakeGame = { size: 30 };
             snakeGame.snakeHead = randomLocation();
             snakeGame.food = randomLocation();
             snakeGame.direction = undefined;
-            snakeGame.previousDirection = undefined;
+            snakeGame.lastDirection = undefined;
             snakeGame.body = [];
+            snakeGame.bodyCount = 0;
         }
 
         // Shows the food location
@@ -176,6 +159,42 @@
             if (num == 2) {
                 tableRef.rows[snakeGame.food.y].cells[snakeGame.food.x].classList.remove("food");
                 snakeGame.food = randomLocation();
+            }
+        }
+
+        function move() {
+            if (!snakeGame.direction) return console.log('There is no input');
+            snakeGame.snakeHead.x += snakeGame.direction.x;
+            snakeGame.snakeHead.y += snakeGame.direction.y;
+        }
+
+        // Kontrollerer slangen
+        function controlSnake(e) {
+            let direction = snakeGame.direction;
+            let lastDirection = snakeGame.lastDirection;
+
+            if (e.key == 'ArrowLeft' && lastDirection.key == 'ArrowRight' ||
+                e.key == 'ArrowRight' && lastDirection.key == 'ArrowLeft' ||
+                e.key == 'ArrowUp' && lastDirection.key == 'ArrowDown' ||
+                e.key == 'ArrowDown' && lastDirection.key == 'ArrowUp'
+            ) return;
+
+            console.log(e);
+            if (e.key == 'ArrowLeft') {
+                lastDirection = direction;
+                direction = { key: 'ArrowLeft', x: -1, y: 0 };
+            }
+            if (e.key == 'ArrowRight') {
+                lastDirection = direction;
+                direction = { key: 'ArrowRight', x: 1, y: 0 };
+            }
+            if (e.key == 'ArrowUp') {
+                lastDirection = direction;
+                direction = { key: 'ArrowUp', x: 0, y: -1 };
+            }
+            if (e.key == 'ArrowDown') {
+                lastDirection = direction;
+                direction = { key: 'ArrowDown', x: 0, y: 1 };
             }
         }
 
@@ -194,6 +213,6 @@
         }
 
     </script>
-    </body>
+</body>
 
 </html>

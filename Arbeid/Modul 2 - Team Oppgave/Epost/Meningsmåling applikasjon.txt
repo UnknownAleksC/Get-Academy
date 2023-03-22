@@ -1,9 +1,0 @@
-Meningsmåling applikasjon:
-Ta inn meningsmålinger
-Sende en lenke på mail
-Få tid og dato spørsmålet blir svart
-Alternativer å velge
-Folk kan legge inn forslag/alternativ som tekst
-Svar skal bli settet inn anonymt, men skal vise prosentvis hvor mange som svarte hva og hvor mange som svarte
-Kan bli avsluttet etter en vis tid, når alle har svart eller når kunden vil avslutte det
-Måte å lagre svarene og dataen som en pdf
