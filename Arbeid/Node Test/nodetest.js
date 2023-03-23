@@ -143,3 +143,5 @@ ll.insertAt(600, 99); // Inserts at invalid index
 
 console.log(ll);
 ll.printListData();
+
+let numbers = [3, 7, 11]
