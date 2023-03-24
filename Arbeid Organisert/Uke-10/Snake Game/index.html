@@ -28,6 +28,10 @@
         td.food {
             background: rgb(255, 0, 0);
         }
+
+        td.eaten {
+            background: white;
+        }
     </style>
 </head>
 
@@ -40,7 +44,6 @@
         const textDiv = document.getElementById('text');
         let intervalId = false;
         let table = false;
-
         let snakeGame
         initModel();
 
@@ -55,6 +58,7 @@
             let headLoc = tableRef.rows[head.y].cells[head.x];
             let foodLoc = tableRef.rows[food.y].cells[food.x];
 
+            // Checks if the head is touching outside borders
             if (
                 head.y >= snakeGame.size ||
                 head.y < 0 ||
@@ -62,49 +66,66 @@
                 head.x < 0
             ) return gameOver();
 
+            // Updates body cords and removes the previous body
             for (i = (body.length - 1); i >= 0; i--) {
                 let bodyLoc = tableRef.rows[body[i].y].cells[body[i].x];
-                bodyLoc.classList.remove('snakeBody');
+                bodyLoc.classList.remove("snakeBody");
                 if (i == 0) {
                     body[i].x = head.x;
                     body[i].y = head.y;
                 }
-                else if (i > 0) { body[i] = body[(i - 1)]; } // Makes .y and .x invalid
+                else {
+                    body[i].x = body[(i - 1)].x;
+                    body[i].y = body[(i - 1)].y;
+                } // Makes .y and .x invalid
             }
 
-            headLoc.classList.remove('snakeHead');
-            foodLoc.classList.remove('food');
+            // Removes previous snakehead
+            headLoc.classList.remove("snakeHead");
 
+            // Creates new body if snake touches the fruit
+            if (food.x == head.x && food.y == head.y) {
+                if (body.length == 0) { body.push({ y: head.y, x: head.x }) }
+                else { body.push({ y: body[body.length - 1].y, x: body[body.length - 1].x }) }
+                updateFood(foodLoc, 2);
+            }
+
+            // Updates snake position
             if (direction == undefined) console.log('There is no input');
             direction == 'ArrowDown' ? ++head.y : direction;
             direction == 'ArrowUp' ? --head.y : direction;
             direction == 'ArrowRight' ? ++head.x : direction;
             direction == 'ArrowLeft' ? --head.x : direction;
 
-            if (food.x == head.x && food.y == head.y) {
-                let bodyLength = body.length;
-                if (bodyLength == 0) { body.push({ y: head.y, x: head.x }) }
-                else { body.push({ y: body[bodyLength - 1].y, x: body[bodyLength - 1].x }) }
-                food[0] = randomLocation();
-            }
-
-
+            // Puts down new body
             for (i = 0; i < body.length; i++) {
-                let bodyLoc = tableRef.rows[body[i].y].cells[body[i].x]
-                console.log(body[i].y, body[i].x);
-                bodyLoc.classList.add('snakeBody')
+                let bodyLoc = tableRef.rows[body[i].y].cells[body[i].x];
+                // console.log(body[i].y, body[i].x);
+                bodyLoc.classList.add("snakeBody");
             }
 
+            // Finds new snake head position
             headLoc = tableRef.rows[head.y].cells[head.x];
-            foodLoc = tableRef.rows[food.y].cells[food.x];
 
-            headLoc.classList.add('snakeHead');
-            foodLoc.classList.add('food');
+            console.log(foodLoc);
+            tableRef.rows[food.y].cells[food.x].classList.remove('food');
+            if (foodLoc.className !== 'food') updateFood(foodLoc, 1);
+            headLoc.classList.add("snakeHead");
+
+            // Checks if the snake head is touching the body
+            for (i = 0; i < body.length; i++) {
+                if (
+                    body[i].x === head.x &&
+                    body[i].y === head.y
+                ) return gameOver();
+            }
+
+            console.log(food.x, food.y);
         }
 
         generateTable();
         function generateTable() {
-            // Lager tabellen
+            // Creates the table 
             for (let rowIndex = 0; rowIndex < snakeGame.size; rowIndex++) {
                 let newRow = tableRef.insertRow();
                 for (let colIndex = 0; colIndex < snakeGame.size; colIndex++) {
@@ -112,20 +133,21 @@
                 }
             }
 
-            // Gir start kordinater til slange hode
+            // Gives starting cords for the snake
             let snakeCords = snakeGame.snakeHead;
             let startCellSnake = tableRef.rows[snakeCords.y].cells[snakeCords.x];
-            startCellSnake.classList.add('snakeHead');
+            startCellSnake.classList.add("snakeHead");
 
-            // Gir start kordinater til den første frukten
-            let foodCords = snakeGame.food;
-            let startCellFood = tableRef.rows[foodCords.y].cells[foodCords.x];
-            startCellFood.classList.add('food');
+            // Gives starting cords for the food
+            let food = snakeGame.food;
+            let startCellFood = tableRef.rows[food.y].cells[food.x];
+            startCellFood.classList.add("food");
 
-            intervalId = setInterval(updateView, 100)
+            intervalId = setInterval(updateView, 150)
         }
 
         // CONTROLLER
+        // Checks what key is being pressed and updates it if conditions are met
         document.addEventListener("keydown", (e) => {
             let validInputs = ['ArrowRight', 'ArrowLeft', 'ArrowUp', 'ArrowDown'];
             if (validInputs.includes(e.key)) {
@@ -138,6 +160,7 @@
             }
         });
 
+        // Gives snakes the objects needed for the model
         function initModel() {
             snakeGame = { size: 30 };
             snakeGame.snakeHead = randomLocation();
@@ -147,16 +170,27 @@
             snakeGame.body = [];
         }
 
+        // Shows the food location
+        function updateFood(foodLoc, num) {
+            if (num == 1) tableRef.rows[snakeGame.food.y].cells[snakeGame.food.x].classList.add("food");
+            if (num == 2) {
+                tableRef.rows[snakeGame.food.y].cells[snakeGame.food.x].classList.remove("food");
+                snakeGame.food = randomLocation();
+            }
+        }
+
+        // Triggers when player activates a game over condition
+        function gameOver() {
+            clearInterval(intervalId);
+            textDiv.innerHTML = `Game Over`;
+        }
+
+        // Creates random x and y cordinates within the size given by initModel
         function randomLocation() {
             return {
                 x: Math.floor(Math.random() * snakeGame.size),
                 y: Math.floor(Math.random() * snakeGame.size)
             }
-        }
-
-        function gameOver() {
-            clearInterval(intervalId);
-            textDiv.innerHTML = `Game Over`;
         }
 
     </script>

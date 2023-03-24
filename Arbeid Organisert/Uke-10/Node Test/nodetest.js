@@ -141,5 +141,7 @@ ll.insertAt(600, 99); // Inserts at invalid index
 
 // ll.clearList();
 
-console.log(ll);
-ll.printListData();
+// console.log(ll);
+// ll.printListData();
+
+// let numbers = [3, 7, 11]
