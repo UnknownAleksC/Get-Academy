@@ -1,0 +1,15 @@
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\obj\Debug\net7.0\Social Media.csproj.AssemblyReference.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\obj\Debug\net7.0\Social Media.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\obj\Debug\net7.0\Social Media.AssemblyInfoInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\obj\Debug\net7.0\Social Media.AssemblyInfo.cs
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\obj\Debug\net7.0\Social Media.csproj.CoreCompileInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\bin\Debug\net7.0\Social Media.exe
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\bin\Debug\net7.0\Social Media.deps.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\bin\Debug\net7.0\Social Media.runtimeconfig.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\bin\Debug\net7.0\Social Media.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\bin\Debug\net7.0\Social Media.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\obj\Debug\net7.0\Social Media.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\obj\Debug\net7.0\refint\Social Media.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\obj\Debug\net7.0\Social Media.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\obj\Debug\net7.0\Social Media.genruntimeconfig.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Social Media\Social Media\obj\Debug\net7.0\ref\Social Media.dll

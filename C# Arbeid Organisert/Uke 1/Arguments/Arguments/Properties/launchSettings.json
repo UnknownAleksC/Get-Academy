@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Arguments": {
+      "commandName": "Project",
+      "commandLineArgs": "Test for hvor mange argumenter det er!"
+    }
+  }
+}

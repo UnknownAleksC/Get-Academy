@@ -1,0 +1,15 @@
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\bin\Debug\net7.0\Jobb Fabrikk Uke 1 Pensum.exe
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\bin\Debug\net7.0\Jobb Fabrikk Uke 1 Pensum.deps.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\bin\Debug\net7.0\Jobb Fabrikk Uke 1 Pensum.runtimeconfig.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\bin\Debug\net7.0\Jobb Fabrikk Uke 1 Pensum.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\bin\Debug\net7.0\Jobb Fabrikk Uke 1 Pensum.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\obj\Debug\net7.0\Jobb Fabrikk Uke 1 Pensum.csproj.AssemblyReference.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\obj\Debug\net7.0\Jobb Fabrikk Uke 1 Pensum.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\obj\Debug\net7.0\Jobb Fabrikk Uke 1 Pensum.AssemblyInfoInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\obj\Debug\net7.0\Jobb Fabrikk Uke 1 Pensum.AssemblyInfo.cs
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\obj\Debug\net7.0\Jobb Fabrikk Uke 1 Pensum.csproj.CoreCompileInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\obj\Debug\net7.0\Jobb Fabrikk Uke 1 Pensum.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\obj\Debug\net7.0\refint\Jobb Fabrikk Uke 1 Pensum.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\obj\Debug\net7.0\Jobb Fabrikk Uke 1 Pensum.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\obj\Debug\net7.0\Jobb Fabrikk Uke 1 Pensum.genruntimeconfig.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Jobb Fabrikk Uke 1 Pensum\Jobb Fabrikk Uke 1 Pensum\obj\Debug\net7.0\ref\Jobb Fabrikk Uke 1 Pensum.dll

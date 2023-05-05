@@ -1,0 +1,15 @@
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\bin\Debug\net7.0\Writeline & Readline.exe
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\bin\Debug\net7.0\Writeline & Readline.deps.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\bin\Debug\net7.0\Writeline & Readline.runtimeconfig.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\bin\Debug\net7.0\Writeline & Readline.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\bin\Debug\net7.0\Writeline & Readline.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\obj\Debug\net7.0\Writeline & Readline.csproj.AssemblyReference.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\obj\Debug\net7.0\Writeline & Readline.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\obj\Debug\net7.0\Writeline & Readline.AssemblyInfoInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\obj\Debug\net7.0\Writeline & Readline.AssemblyInfo.cs
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\obj\Debug\net7.0\Writeline & Readline.csproj.CoreCompileInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\obj\Debug\net7.0\Writeline & Readline.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\obj\Debug\net7.0\refint\Writeline & Readline.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\obj\Debug\net7.0\Writeline & Readline.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\obj\Debug\net7.0\Writeline & Readline.genruntimeconfig.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Writeline & Readline\Writeline & Readline\obj\Debug\net7.0\ref\Writeline & Readline.dll
