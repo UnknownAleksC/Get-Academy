@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Passordgenerator": {
+      "commandName": "Project",
+      "commandLineArgs": "PassordGenerator 10 llllLLssdd"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\bin\Debug\net7.0\Solving Problems with Arrays.exe
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\bin\Debug\net7.0\Solving Problems with Arrays.deps.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\bin\Debug\net7.0\Solving Problems with Arrays.runtimeconfig.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\bin\Debug\net7.0\Solving Problems with Arrays.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\bin\Debug\net7.0\Solving Problems with Arrays.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\obj\Debug\net7.0\Solving Problems with Arrays.csproj.AssemblyReference.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\obj\Debug\net7.0\Solving Problems with Arrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\obj\Debug\net7.0\Solving Problems with Arrays.AssemblyInfoInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\obj\Debug\net7.0\Solving Problems with Arrays.AssemblyInfo.cs
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\obj\Debug\net7.0\Solving Problems with Arrays.csproj.CoreCompileInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\obj\Debug\net7.0\Solving Problems with Arrays.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\obj\Debug\net7.0\refint\Solving Problems with Arrays.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\obj\Debug\net7.0\Solving Problems with Arrays.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\obj\Debug\net7.0\Solving Problems with Arrays.genruntimeconfig.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Solving Problems with Arrays\Solving Problems with Arrays\obj\Debug\net7.0\ref\Solving Problems with Arrays.dll
