@@ -1,0 +1,15 @@
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\bin\Debug\net7.0\Bossfight.exe
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\bin\Debug\net7.0\Bossfight.deps.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\bin\Debug\net7.0\Bossfight.runtimeconfig.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\bin\Debug\net7.0\Bossfight.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\bin\Debug\net7.0\Bossfight.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\obj\Debug\net7.0\Bossfight.csproj.AssemblyReference.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\obj\Debug\net7.0\Bossfight.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\obj\Debug\net7.0\Bossfight.AssemblyInfoInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\obj\Debug\net7.0\Bossfight.AssemblyInfo.cs
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\obj\Debug\net7.0\Bossfight.csproj.CoreCompileInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\obj\Debug\net7.0\Bossfight.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\obj\Debug\net7.0\refint\Bossfight.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\obj\Debug\net7.0\Bossfight.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\obj\Debug\net7.0\Bossfight.genruntimeconfig.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Bossfight\Bossfight\obj\Debug\net7.0\ref\Bossfight.dll

@@ -1,0 +1,15 @@
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\bin\Debug\net7.0\Oppgave-Uke3-VirtualPet.exe
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\bin\Debug\net7.0\Oppgave-Uke3-VirtualPet.deps.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\bin\Debug\net7.0\Oppgave-Uke3-VirtualPet.runtimeconfig.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\bin\Debug\net7.0\Oppgave-Uke3-VirtualPet.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\bin\Debug\net7.0\Oppgave-Uke3-VirtualPet.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\obj\Debug\net7.0\Oppgave-Uke3-VirtualPet.csproj.AssemblyReference.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\obj\Debug\net7.0\Oppgave-Uke3-VirtualPet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\obj\Debug\net7.0\Oppgave-Uke3-VirtualPet.AssemblyInfoInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\obj\Debug\net7.0\Oppgave-Uke3-VirtualPet.AssemblyInfo.cs
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\obj\Debug\net7.0\Oppgave-Uke3-VirtualPet.csproj.CoreCompileInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\obj\Debug\net7.0\Oppgave-Uke3-VirtualPet.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\obj\Debug\net7.0\refint\Oppgave-Uke3-VirtualPet.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\obj\Debug\net7.0\Oppgave-Uke3-VirtualPet.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\obj\Debug\net7.0\Oppgave-Uke3-VirtualPet.genruntimeconfig.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Oppgave-Uke3-VirtualPet\Oppgave-Uke3-VirtualPet\obj\Debug\net7.0\ref\Oppgave-Uke3-VirtualPet.dll
