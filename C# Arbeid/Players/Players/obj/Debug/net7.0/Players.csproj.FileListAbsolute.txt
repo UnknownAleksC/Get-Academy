@@ -1,0 +1,15 @@
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\bin\Debug\net7.0\Players.exe
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\bin\Debug\net7.0\Players.deps.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\bin\Debug\net7.0\Players.runtimeconfig.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\bin\Debug\net7.0\Players.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\bin\Debug\net7.0\Players.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\obj\Debug\net7.0\Players.csproj.AssemblyReference.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\obj\Debug\net7.0\Players.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\obj\Debug\net7.0\Players.AssemblyInfoInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\obj\Debug\net7.0\Players.AssemblyInfo.cs
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\obj\Debug\net7.0\Players.csproj.CoreCompileInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\obj\Debug\net7.0\Players.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\obj\Debug\net7.0\refint\Players.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\obj\Debug\net7.0\Players.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\obj\Debug\net7.0\Players.genruntimeconfig.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Players\Players\obj\Debug\net7.0\ref\Players.dll

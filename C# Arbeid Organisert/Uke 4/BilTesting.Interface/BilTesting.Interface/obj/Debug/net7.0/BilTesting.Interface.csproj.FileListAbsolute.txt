@@ -1,0 +1,15 @@
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\bin\Debug\net7.0\BilTesting.Interface.exe
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\bin\Debug\net7.0\BilTesting.Interface.deps.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\bin\Debug\net7.0\BilTesting.Interface.runtimeconfig.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\bin\Debug\net7.0\BilTesting.Interface.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\bin\Debug\net7.0\BilTesting.Interface.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\obj\Debug\net7.0\BilTesting.Interface.csproj.AssemblyReference.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\obj\Debug\net7.0\BilTesting.Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\obj\Debug\net7.0\BilTesting.Interface.AssemblyInfoInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\obj\Debug\net7.0\BilTesting.Interface.AssemblyInfo.cs
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\obj\Debug\net7.0\BilTesting.Interface.csproj.CoreCompileInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\obj\Debug\net7.0\BilTesting.Interface.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\obj\Debug\net7.0\refint\BilTesting.Interface.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\obj\Debug\net7.0\BilTesting.Interface.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\obj\Debug\net7.0\BilTesting.Interface.genruntimeconfig.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\BilTesting.Interface\BilTesting.Interface\obj\Debug\net7.0\ref\BilTesting.Interface.dll
