@@ -8,9 +8,9 @@ namespace Shopping_Cart
 {
     internal class Product
     {
-        internal string Name { get; set; }
-        internal int Price { get; set; }
-        internal int Amount { get; set; }
+        internal string Name;
+        internal int Price;
+        internal int Amount;
 
 
         internal Product(string productName, int productPrice, int productAmount)
