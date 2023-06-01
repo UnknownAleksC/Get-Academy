@@ -41,7 +41,7 @@ namespace Shopping_Cart
             CartItems.Remove(reoccurringItem);
             reoccurringItem.AddAdditionalProduct(amount, price);
             CartItems.Add(reoccurringItem);
-            Console.WriteLine($"Du kjøpte {amount} ekstra {product.Name}");
+            Console.WriteLine($"Du kjøpte {amount} flere stk. {product.Name}");
         }
     }
 }
