@@ -2,42 +2,63 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Shopping_Cart
 {
-    internal static class SimpleShoppingCartDemo
+    public class Simple_shoppingCartDemo
     {
-        private static List<Product> shoppingCart;
-        public static void Run()
+        private List<CartItem> _shoppingCart;
+        public void Run()
         {
-            shoppingCart = new List<Product>();
+            _shoppingCart = new List<CartItem>();
             BuyProduct("Banana", 10, 5);
+            BuyProduct("Banana", 15, 5);
             BuyProduct("Fluespray", 5, 20);
             BuyProduct("Kremflaske", 15, 10);
             ShowCart();
         }
 
-        private static void BuyProduct(string name, int price, int amount)
+        private void BuyProduct(string name, int price, int amount)
         {
-            var product = new Product(name, price, amount);
-            shoppingCart.Add(product);
-            Console.WriteLine($"Du kjøpte {product.Amount} stk. {product.Name}");
+            CartItem reoccurringItem = _shoppingCart.FirstOrDefault(x => x.Product.Name == name);
+            if (reoccurringItem == null)
+                AddNewProduct(name, price, amount);
+            else
+                AddExistingProduct(price, amount, reoccurringItem);
         }
-        private static void ShowCart()
+
+
+        private void AddNewProduct(string name, int price, int amount)
         {
-            if (shoppingCart.Count == 0)
+            var product = new Product(name, price);
+            var cartItem = new CartItem(product, amount);
+            _shoppingCart.Add(cartItem);
+            Console.WriteLine($"Du kjøpte {cartItem.Amount} stk. {cartItem.Product.Name}");
+        }
+
+        private void AddExistingProduct(int price, int amount, CartItem reoccurringItem)
+        {
+            var product = reoccurringItem.Product;
+            _shoppingCart.Remove(reoccurringItem);
+            reoccurringItem.AddAdditionalProduct(amount, price);
+            _shoppingCart.Add(reoccurringItem);
+            Console.WriteLine($"Du kjøpte {amount} ekstra {product.Name}");
+        }
+
+        private void ShowCart()
+        {
+            if (_shoppingCart.Count == 0)
                 Console.WriteLine("Handlekurven er tom.");
             else
             {
                 Console.WriteLine("Handlekurv:");
-                int totalPrice = 0;
-                foreach (Product product in shoppingCart)
+                double totalPrice = 0;
+                foreach (CartItem item in _shoppingCart)
                 {
-                    int orderLinePrice = product.Price * product.Amount;
-                    totalPrice += orderLinePrice;
-                    Console.WriteLine($"{product.Amount}stk {product.Name}, {product.Price}kr per = {orderLinePrice}kr");
+                    totalPrice += item.CalculateOrderLinePrice();
                 }
 
                 Console.WriteLine($"Totalpris: {totalPrice}kr");

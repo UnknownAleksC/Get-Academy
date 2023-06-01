@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 namespace Shopping_Cart
 {
-    internal class Product
+    public class Product
     {
-        internal string Name;
-        internal int Price;
-        internal int Amount;
+        public string Name;
+        public double Price;
 
-
-        internal Product(string productName, int productPrice, int productAmount)
+        public Product(string productName, double productPrice)
         {
             Name = productName;
             Price = productPrice;
-            Amount = productAmount;
         }
     }
 }
