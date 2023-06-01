@@ -10,53 +10,24 @@ namespace Shopping_Cart
 {
     public class Simple_shoppingCartDemo
     {
-        private List<CartItem> _shoppingCart;
-        public void Run()
+        private static ShoppingCart _shoppingCart;
+
+        public static void Run()
         {
-            _shoppingCart = new List<CartItem>();
-            BuyProduct("Banana", 10, 5);
-            BuyProduct("Banana", 15, 5);
-            BuyProduct("Fluespray", 5, 20);
-            BuyProduct("Kremflaske", 15, 10);
+            _shoppingCart = new ShoppingCart();
+            _shoppingCart.CreateCart();
             ShowCart();
         }
 
-        private void BuyProduct(string name, int price, int amount)
+        private static void ShowCart()
         {
-            CartItem reoccurringItem = _shoppingCart.FirstOrDefault(x => x.Product.Name == name);
-            if (reoccurringItem == null)
-                AddNewProduct(name, price, amount);
-            else
-                AddExistingProduct(price, amount, reoccurringItem);
-        }
-
-
-        private void AddNewProduct(string name, int price, int amount)
-        {
-            var product = new Product(name, price);
-            var cartItem = new CartItem(product, amount);
-            _shoppingCart.Add(cartItem);
-            Console.WriteLine($"Du kjøpte {cartItem.Amount} stk. {cartItem.Product.Name}");
-        }
-
-        private void AddExistingProduct(int price, int amount, CartItem reoccurringItem)
-        {
-            var product = reoccurringItem.Product;
-            _shoppingCart.Remove(reoccurringItem);
-            reoccurringItem.AddAdditionalProduct(amount, price);
-            _shoppingCart.Add(reoccurringItem);
-            Console.WriteLine($"Du kjøpte {amount} ekstra {product.Name}");
-        }
-
-        private void ShowCart()
-        {
-            if (_shoppingCart.Count == 0)
+            if (_shoppingCart.CartItems.Count == 0)
                 Console.WriteLine("Handlekurven er tom.");
             else
             {
                 Console.WriteLine("Handlekurv:");
                 double totalPrice = 0;
-                foreach (CartItem item in _shoppingCart)
+                foreach (CartItem item in _shoppingCart.CartItems)
                 {
                     totalPrice += item.CalculateOrderLinePrice();
                 }
