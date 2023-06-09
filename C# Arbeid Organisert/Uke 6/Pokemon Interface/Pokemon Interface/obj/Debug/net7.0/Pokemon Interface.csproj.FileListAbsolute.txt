@@ -1,0 +1,15 @@
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\bin\Debug\net7.0\Pokemon Interface.exe
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\bin\Debug\net7.0\Pokemon Interface.deps.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\bin\Debug\net7.0\Pokemon Interface.runtimeconfig.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\bin\Debug\net7.0\Pokemon Interface.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\bin\Debug\net7.0\Pokemon Interface.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\obj\Debug\net7.0\Pokemon Interface.csproj.AssemblyReference.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\obj\Debug\net7.0\Pokemon Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\obj\Debug\net7.0\Pokemon Interface.AssemblyInfoInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\obj\Debug\net7.0\Pokemon Interface.AssemblyInfo.cs
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\obj\Debug\net7.0\Pokemon Interface.csproj.CoreCompileInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\obj\Debug\net7.0\Pokemon Interface.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\obj\Debug\net7.0\refint\Pokemon Interface.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\obj\Debug\net7.0\Pokemon Interface.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\obj\Debug\net7.0\Pokemon Interface.genruntimeconfig.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Pokemon Interface\Pokemon Interface\obj\Debug\net7.0\ref\Pokemon Interface.dll

@@ -1,0 +1,15 @@
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\bin\Debug\net7.0\Klikkerspill.exe
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\bin\Debug\net7.0\Klikkerspill.deps.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\bin\Debug\net7.0\Klikkerspill.runtimeconfig.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\bin\Debug\net7.0\Klikkerspill.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\bin\Debug\net7.0\Klikkerspill.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\obj\Debug\net7.0\Klikkerspill.csproj.AssemblyReference.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\obj\Debug\net7.0\Klikkerspill.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\obj\Debug\net7.0\Klikkerspill.AssemblyInfoInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\obj\Debug\net7.0\Klikkerspill.AssemblyInfo.cs
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\obj\Debug\net7.0\Klikkerspill.csproj.CoreCompileInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\obj\Debug\net7.0\Klikkerspill.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\obj\Debug\net7.0\refint\Klikkerspill.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\obj\Debug\net7.0\Klikkerspill.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\obj\Debug\net7.0\Klikkerspill.genruntimeconfig.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\Klikkerspill\Klikkerspill\obj\Debug\net7.0\ref\Klikkerspill.dll
