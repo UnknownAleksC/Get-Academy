@@ -1,0 +1,15 @@
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\bin\Debug\net7.0\MatchingMinigame.exe
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\bin\Debug\net7.0\MatchingMinigame.deps.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\bin\Debug\net7.0\MatchingMinigame.runtimeconfig.json
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\bin\Debug\net7.0\MatchingMinigame.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\bin\Debug\net7.0\MatchingMinigame.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\obj\Debug\net7.0\MatchingMinigame.csproj.AssemblyReference.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\obj\Debug\net7.0\MatchingMinigame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\obj\Debug\net7.0\MatchingMinigame.AssemblyInfoInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\obj\Debug\net7.0\MatchingMinigame.AssemblyInfo.cs
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\obj\Debug\net7.0\MatchingMinigame.csproj.CoreCompileInputs.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\obj\Debug\net7.0\MatchingMinigame.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\obj\Debug\net7.0\refint\MatchingMinigame.dll
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\obj\Debug\net7.0\MatchingMinigame.pdb
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\obj\Debug\net7.0\MatchingMinigame.genruntimeconfig.cache
+C:\Users\ThatA\OneDrive\Dokumenter\GetIT\C# Oppgaver\MatchingMinigame\MatchingMinigame\obj\Debug\net7.0\ref\MatchingMinigame.dll
