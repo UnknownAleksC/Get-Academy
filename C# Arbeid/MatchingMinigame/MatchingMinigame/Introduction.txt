@@ -1,6 +1,0 @@
-﻿Welcome to a simple matching game!
-Use the arrows keys and match the inputs given on screen.
-If you use too much time to answer an input or put in the wrong input, you will lose!
-Good luck!
-
-PRESS ENTER TO START
